@@ -1,0 +1,71 @@
+tr:nth-child(even) > td:nth-child(odd),
+tr:nth-child(odd) > td:nth-child(even) {
+  /* background-color: #222; */
+  background-color: #B58763;
+}
+
+tr:nth-child(even) > td:nth-child(even),
+tr:nth-child(odd) > td:nth-child(odd) {
+  /* background-color: #fff; */
+  background-color: #EEDBB3;
+}
+
+table {
+  margin: auto;
+  border: 1px solid black;
+  border-spacing: 0;
+  table-layout: fixed;
+  cursor: grab;
+}
+
+td {
+  text-align: center;
+  /* height: 100px;
+  width: 100px; */
+  height: 11vmin;
+  width: 11vmin;
+}
+
+td > img {
+  margin-left: auto;
+  height: 94%;
+  width: 94%;
+}
+
+img.select {
+  position: relative;
+  left: 0;
+  top: 0;
+  transform: scale(1.1); /* Somewhere between 1.1 and 1.2 */
+}
+
+tr:nth-child(even) > td:nth-child(odd).highlight,
+tr:nth-child(odd) > td:nth-child(even).highlight {
+  /* background-color: #222; */
+  /* background-color: #B58763; */
+  background-color: hsl(52, 36%, 40%);
+
+}
+
+tr:nth-child(even) > td:nth-child(even).highlight,
+tr:nth-child(odd) > td:nth-child(odd).highlight {
+  /* background-color: #fff; */
+  /* background-color: #EEDBB3; */
+  background-color: hsl(67, 63%, 72%);
+
+}
+
+
+/* background: radial-gradient(#000, #B58763); */
+/* instead of #000 a less intense version of B58763 */
+
+/* promotion options */
+.promotion {
+  position: absolute;
+  left: 10px;
+  display: none;
+}
+
+.promotion-on {
+  display: block;
+}
